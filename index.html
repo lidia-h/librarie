@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Librarie Online
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="container text-center">
+                        <h1 class="bg-light py-4 text-info">
+                           Librarie Online
+                        </h1>
+                        <style>
+                            h1 {text-align: center;}
+                        </style>
+
+                    <div>
+                        <label>Numele Cartii</label><label class="validation-error hide" id="fullNameValidationError">Completati campul.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Autor</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Codul Cartii</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Pret</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Salveaza">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Numele Cartii</th>
+                            <th>Autor</th>
+                            <th>Codul Cartii</th>
+                            <th>Pret</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
